@@ -1,0 +1,5 @@
+.detail-page {
+  max-width: 500px;
+  margin: 0 auto;
+  animation: fadeInUp 0.4s ease;
+}

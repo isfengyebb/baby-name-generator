@@ -1,0 +1,28 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+}
+
+/* 导航栏 */
+.app-layout .adm-nav-bar {
+  background: linear-gradient(180deg, var(--color-bg) 0%, transparent 100%);
+  border-bottom: none;
+  --height: 52px;
+}
+
+.app-layout .adm-nav-bar-title {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+  letter-spacing: 1px;
+}
+
+.app-layout-content {
+  flex: 1;
+  padding: var(--spacing-md);
+  padding-bottom: calc(var(--spacing-xl) + env(safe-area-inset-bottom));
+  animation: fadeIn 0.3s ease;
+}

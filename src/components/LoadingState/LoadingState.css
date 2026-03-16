@@ -1,0 +1,58 @@
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-md);
+  min-height: 400px;
+  animation: fadeIn 0.5s ease;
+}
+
+.loading-state-ornament {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary-glow), rgba(197, 146, 58, 0.08));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-lg);
+  animation: gentlePulse 2s ease-in-out infinite;
+}
+
+.loading-state-char {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xxl);
+  color: var(--color-primary);
+}
+
+.loading-state-text {
+  margin-top: var(--spacing-lg);
+  color: var(--color-text-secondary);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-sm);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.loading-state-dots {
+  display: flex;
+  gap: 6px;
+  margin-top: var(--spacing-md);
+}
+
+.loading-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  animation: gentlePulse 1.4s ease-in-out infinite;
+}
+
+.loading-dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dot:nth-child(3) {
+  animation-delay: 0.4s;
+}

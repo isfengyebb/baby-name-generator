@@ -1,0 +1,67 @@
+@import './variables.css';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  /* 宣纸纹理 */
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(197, 146, 58, 0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(179, 58, 58, 0.03) 0%, transparent 50%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* antd-mobile 主题覆盖 */
+:root:root {
+  --adm-color-primary: var(--color-primary);
+  --adm-color-text: var(--color-text-primary);
+  --adm-color-text-secondary: var(--color-text-secondary);
+  --adm-color-background: var(--color-bg);
+  --adm-color-border: rgba(44, 24, 16, 0.08);
+  --adm-font-family: var(--font-body);
+  --adm-border-color: rgba(44, 24, 16, 0.08);
+}
+
+/* 全局动画 */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes gentlePulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes brushStroke {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
